@@ -5,6 +5,7 @@ with sync_playwright() as playwright:
     context = browser.new_context()
     page = context.new_page()
     page.goto("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/login")
+
     reg_link = page.get_by_test_id('login-page-registration-link')
     reg_link.click()
     reg_email = page.get_by_test_id('registration-form-email-input').locator("input")
