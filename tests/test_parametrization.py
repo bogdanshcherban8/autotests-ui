@@ -36,7 +36,12 @@ class TestOperation:
     def test_user_without_operations(self, user: str, account: str):
         print(f'Running test without user: {user}')
 
-users = {'+7': 'User with money on bank account', '+8':'User without money on bank account', '+9': 'User with operation on bank account'}
-@pytest.mark.parametrize('phone_number', users.keys(), ids=lambda phone_number: f'{phone_number}: {users[phone_number]}')
+
+users = {'+7': 'User with money on bank account', '+8': 'User without money on bank account',
+         '+9': 'User with operation on bank account'}
+
+
+@pytest.mark.parametrize('phone_number', users.keys(),
+                         ids=lambda phone_number: f'{phone_number}: {users[phone_number]}')
 def test_identifiers(phone_number: str):
     ...
