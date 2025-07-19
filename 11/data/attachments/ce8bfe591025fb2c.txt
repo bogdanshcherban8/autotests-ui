@@ -1,6 +1,0 @@
-INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid= registration-form-email-input" at index "0"
-INFO     BASE_ELEMENT:base_element.py:45 Checking visible "input" "Email"
-INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid= registration-form-username-input" at index "0"
-INFO     BASE_ELEMENT:base_element.py:45 Checking visible "input" "Username"
-INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid= registration-form-password-input" at index "0"
-INFO     BASE_ELEMENT:base_element.py:45 Checking visible "input" "Password"
