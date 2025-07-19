@@ -2,7 +2,7 @@ from components.base_component import BaseComponent
 from playwright.sync_api import Page, expect
 
 from components.elements.input import Input
-
+import allure
 
 class RegistrationFormComponent(BaseComponent):
     def __init__(self, page: Page):
@@ -10,7 +10,7 @@ class RegistrationFormComponent(BaseComponent):
         self.email_input = Input(page, 'registration-form-email-input', "Email")
         self.username_input = Input(page,'registration-form-username-input', "Username")
         self.password_input = Input(page, 'registration-form-password-input', "Password")
-
+    @allure.step('Fill registration form')
     def fill(self, email: str, username: str, password: str):
         self.email_input.fill(email)
         self.email_input.check_have_value(email)

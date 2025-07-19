@@ -4,7 +4,7 @@ from components.elements.text import Text
 from pages.base_page import BasePage
 from playwright.sync_api import Page, expect
 from components.elements.button import Button
-
+import allure
 class LoginPage(BasePage):
     def __init__(self, page: Page):
         super().__init__(page)
@@ -17,6 +17,7 @@ class LoginPage(BasePage):
         self.login_button.click()
     def click_registration_link(self):
         self.reg_link.click()
+    @allure.step('Check wrong email or password alert')
     def check_wrong_email_or_password_alert(self):
         self.wrong_email_or_password_alert.check_visible()
         self.wrong_email_or_password_alert.check_have_text("Wrong email or password")
