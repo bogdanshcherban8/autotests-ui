@@ -37,7 +37,7 @@ jobs:
 
   publish-report:
     runs-on: ubuntu-latest
-    needs: run-tests  # <--- джоба выполнится только после run-tests
+    needs: run-tests
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
