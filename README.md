@@ -7,7 +7,7 @@ on [GitHub](https://github.com/Nikita-Filonov/qa-automation-engineer-ui-course).
 
 ## Project Overview
 
-The goal of this project is to automate the testing of the UI Course application. The automated tests verify various
+The goal of this project is to automate the testing of the UI application. The automated tests verify various
 functionalities of the application to ensure its stability and correctness. The project structure follows best practices
 for organizing test code with clear, maintainable scripts.
 
